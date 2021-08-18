@@ -1,0 +1,14 @@
+nav:first-of-type{direction: rtl !important;background-color:#12233F;padding:5px !important;}
+nav div ul li a{color:#fff;font-weight:bolder;font-family: Tajawal-Regular !important;font-size:16px;}
+nav div ul li{padding:0px 20px 0px 20px;}
+nav div ul{width:auto;margin:auto;}
+.navbar-toggler{background-color:#fff;}
+
+
+/* Start log&search */
+.container-fluid{direction:rtl}
+.search{margin-top:20px;padding:10px !important;border-radius:30px;background:#F0F2F5;}
+.search input{width:95%;margin:0px;border:none;outline:none;background:#F0F2F5;}
+.fa-search{color:#12233F;position:absolute;left:40px;top:35px;}
+
+/* End log&search */

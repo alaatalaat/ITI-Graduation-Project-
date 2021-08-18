@@ -1,0 +1,6 @@
+/* .headerOne{direction:rtl;} */
+.headerOne .row{direction:rtl;background-color:#F0F2F5;}
+.headerOne .row div:first-child span{font-size:14px;margin-right:50px;font-weight:bolder;color:#12233F;font-family: 'Tajawal', sans-serif;}
+.headerOne .row div:nth-child(3) span a{color:#000}
+.headerOne .row div:nth-child(3) span:last-of-type{border-right: 1px solid #000;margin-right:10p;}
+/* font-family: Tajawal-Regular !important; */
