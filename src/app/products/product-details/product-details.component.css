@@ -1,0 +1,25 @@
+* {
+  text-align: center;
+  direction: rtl;
+}
+
+.card {
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.card-text span {
+  margin: 0 10px;
+  color: rgb(179, 179, 179);
+}
+
+.card-body {
+  text-align-last: right;
+}
+
+.card-body a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 40px;
+  font-size: 20px;
+}

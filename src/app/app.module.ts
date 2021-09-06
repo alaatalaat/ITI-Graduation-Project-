@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { ConvertToSpacesPipe } from './pipe/convert-to-spaces.pipe';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { BuyNowComponent } from './products/buy-now/buy-now.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ProductDetailsComponent } from './products/product-details/product-deta
     ConvertToSpacesPipe,
     ProductListComponent,
     ProductDetailsComponent,
+    BuyNowComponent,
   ],
   imports: [
     BrowserModule,

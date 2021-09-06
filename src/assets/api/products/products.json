@@ -8,7 +8,7 @@
     "size": "400 ملي",
     "Flavor": "المانجو, الرومان",
     "form": "جل استحمام",
-    "imageUrl": "assets/Products/aroma-green-line.jpg"
+    "imageUrl": "./assets/Products/aroma-green-line.jpg"
   },
   {
     "productId": 2,
@@ -18,7 +18,7 @@
     "description": "أروما جل الاستحمام السائل يمنحك شعور بالنعومةn• رائحة تدوم ل 48 ساعةn• تجربة استحمام رائعة تمنح جسدك نعومة والتدليل الذي تحتاجينه",
     "size": "400 ملي",
     "form": "جل استحمام",
-    "imageUrl": "assets/Products/aroma-black-orchid.jpg"
+    "imageUrl": "./assets/Products/aroma-black-orchid.jpg"
   },
   {
     "productId": 3,
@@ -28,7 +28,7 @@
     "description": "أروما فريش صابون برائحة الاوركيد الوردي, 75 جم",
     "size": "75 جم",
     "form": "الصابون",
-    "imageUrl": "assets/Products/aroma-soap.jpg"
+    "imageUrl": "./assets/Products/aroma-soap.jpg"
   },
   {
     "productId": 4,
@@ -39,7 +39,7 @@
     "size": "250 مل",
     "form": "جل",
     "Flavor": "روز برى",
-    "imageUrl": "assets/Products/areej-shower-jel.jpg"
+    "imageUrl": "./assets/Products/areej-shower-jel.jpg"
   },
   {
     "productId": 5,
@@ -49,7 +49,7 @@
     "description": "سائل استحمام ينشط الجسم والعقل بنفحات الكمثرى المثلج وخشب الأرز. دقة وغموض.",
     "size": "250 مل",
     "form": "غسول جسم",
-    "imageUrl": "assets/Products/axe-black.jpg"
+    "imageUrl": "./assets/Products/axe-black.jpg"
   },
   {
     "productId": 6,
@@ -59,7 +59,7 @@
     "description": "إيفا بالجلسرين كريم سائل الاستحمام يعمل على تنظيف بشرتك بلطف ويتركها حريرية الملمس بفضل رغوته الغنيةnn• يغلف البشرتك برائحة عطرة زكية n• يترك بشرتك نظيفة، مرطبة، وناعمة كالحرير ومعطرة برائحة منعشة",
     "size": "300 مل",
     "form": "كريم استحمام",
-    "imageUrl": "assets/Products/eva-kreem.jpg"
+    "imageUrl": "./assets/Products/eva-kreem.jpg"
   },
   {
     "productId": 7,
@@ -67,9 +67,9 @@
     "productCode": "CCC-222",
     "releaseDate": "March 25, 2021",
     "description": "ايجلز بيكس ناتشورال لوفه حجم كبير مصنوعة من اللوف المصري الطبيعي 100 ٪ n• قشر بلطف وبشكل فعال الخلايا الميتة والأوساخ والشوائب وينظف المسام ويحفز الدورة الدموية مما يتركها مطهرة جيدا ومنتعشة من الرأس إلى القدمين.n• لطيف على البشرة الحساسةn• هذا المنتج آمن لك وللبيئة.n• مزودة بحبل لسهولة التعليق والتجفيف.",
-    "pieces": "قطعتين",
+    "size": "قطعتين",
     "form": "لوفه",
-    "imageUrl": "assets/Products/eaglz-bex.jpg"
+    "imageUrl": "./assets/Products/eaglz-bex.jpg"
   },
   {
     "productId": 8,
@@ -77,9 +77,9 @@
     "productCode": "DDD-222",
     "releaseDate": "June 26, 2021",
     "description": "مناديل العناية السهلة نظيفة ، منعشة وترطيب ، لأنها تحتوي على منظف آمن ومنعش بالعطور غير الكحولية.n• يمكن استخدامه من قبل جميع أفراد الأسرة في أي وقت وفي أي مكان.",
-    "pieces": "40 قطعة",
+    "size": "40 قطعة",
     "form": "مناديل مبللة",
-    "imageUrl": "assets/Products/easy-care.jpg"
+    "imageUrl": "./assets/Products/easy-care.jpg"
   },
   {
     "productId": 9,
@@ -89,7 +89,7 @@
     "description": "استمتع بسبا حراري في المنزل باستخدام بالموفيف شاور جل n• يحتوي على الطين الأبيض الذي يهتم لبشرتكn• المعادن الحرارية تساعد على الاسترخاء جسمكn• التدليك الناعم يعمل على تنظيف البشرة n• يستخدم كل يوم لبشرة ناعمة",
     "size": "250 مل",
     "form": "جل استحمام",
-    "imageUrl": "assets/Products/palmolive-thermal-spa.jpg"
+    "imageUrl": "./assets/Products/palmolive-thermal-spa.jpg"
   },
   {
     "productId": 10,
@@ -97,9 +97,9 @@
     "productCode": "BBB-333",
     "releaseDate": "April 28, 2021",
     "description": "بابيلون مناديل مبللة منعشة، 72 منديل",
-    "pieces": "250 مل",
+    "size": "250 مل",
     "form": "مناديل مبللة",
-    "imageUrl": "assets/Products/papilion-wipes.jpg"
+    "imageUrl": "./assets/Products/papilion-wipes.jpg"
   },
   {
     "productId": 11,
@@ -109,7 +109,7 @@
     "description": "إيفا بالجلسرين كريم سائل الاستحمام يعمل على تنظيف بشرتك بلطف ويتركها حريرية الملمس بفضل رغوته الغنيةnn• يغلف البشرتك برائحة عطرة زكية n• يترك بشرتك نظيفة، مرطبة، وناعمة كالحرير ومعطرة برائحة منعشة",
     "size": "300 مل",
     "form": "كريم استحمام",
-    "imageUrl": "assets/Products/eva-kreem.jpg"
+    "imageUrl": "./assets/Products/eva-kreem.jpg"
   },
   {
     "productId": 12,
@@ -117,8 +117,8 @@
     "productCode": "CCC-222",
     "releaseDate": "March 25, 2021",
     "description": "ايجلز بيكس ناتشورال لوفه حجم كبير مصنوعة من اللوف المصري الطبيعي 100 ٪ n• قشر بلطف وبشكل فعال الخلايا الميتة والأوساخ والشوائب وينظف المسام ويحفز الدورة الدموية مما يتركها مطهرة جيدا ومنتعشة من الرأس إلى القدمين.n• لطيف على البشرة الحساسةn• هذا المنتج آمن لك وللبيئة.n• مزودة بحبل لسهولة التعليق والتجفيف.",
-    "pieces": "قطعتين",
+    "size": "قطعتين",
     "form": "لوفه",
-    "imageUrl": "assets/Products/eaglz-bex.jpg"
+    "imageUrl": "./assets/Products/eaglz-bex.jpg"
   }
 ]

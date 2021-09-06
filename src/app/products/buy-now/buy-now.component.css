@@ -1,0 +1,29 @@
+.buy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 100px 0;
+}
+
+ul {
+  margin-top: 200px;
+}
+
+ul.frist {
+  text-align: right;
+  direction: rtl;
+}
+
+ul.frist li {
+  text-align: right;
+  direction: rtl;
+}
+
+.linkApp {
+  text-align: center;
+}
+
+.linkApp a {
+  margin-right: 50px;
+}

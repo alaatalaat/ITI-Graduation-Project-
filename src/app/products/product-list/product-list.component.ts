@@ -18,7 +18,20 @@ export class ProductListComponent implements OnInit {
         this.products = data;
       });
   }
-  onSelect(product: { productId: any; productName: any }) {
-    this.router.navigate(['/product-details', product.productName]);
+  onSelect(product: {
+    productName: any;
+    description: any;
+    size: string;
+    releaseDate: string;
+    form: string;
+  }) {
+    this.router.navigate([
+      '/product-details',
+      product.productName,
+      product.description,
+      product.size,
+      product.releaseDate,
+      product.form,
+    ]);
   }
 }

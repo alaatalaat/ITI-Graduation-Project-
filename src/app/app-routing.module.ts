@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { BuyNowComponent } from './products/buy-now/buy-now.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -16,7 +17,11 @@ const routes: Routes = [
   { path: 'for-insures', component: ForInsurersComponent },
   { path: 'for-insures-slider', component: ForInsurersSliderComponent },
   { path: 'shop', component: ProductListComponent },
-  { path: 'product-details/:name', component: ProductDetailsComponent },
+  {
+    path: 'product-details/:name/:description/:size/:releaseDate/:form',
+    component: ProductDetailsComponent,
+  },
+  { path: 'buynow', component: BuyNowComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
