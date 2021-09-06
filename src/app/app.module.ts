@@ -18,6 +18,11 @@ import { ForDocsComponent } from './first-nav-links/for-docs/for-docs.component'
 import { ForDocsSliderComponent } from './first-nav-links/for-docs-slider/for-docs-slider.component';
 import { ForInsurersComponent } from './first-nav-links/for-insurers/for-insurers.component';
 import { ForInsurersSliderComponent } from './first-nav-links/for-insurers-slider/for-insurers-slider.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ConvertToSpacesPipe } from './pipe/convert-to-spaces.pipe';
+import { ProductListComponent } from './products/product-list/product-list.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +37,18 @@ import { ForInsurersSliderComponent } from './first-nav-links/for-insurers-slide
     ForDocsSliderComponent,
     ForInsurersComponent,
     ForInsurersSliderComponent,
+    ConvertToSpacesPipe,
+    ProductListComponent,
+    ProductDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CarouselModule, SwiperModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    CarouselModule,
+    SwiperModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

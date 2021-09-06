@@ -1,0 +1,21 @@
+<ul>
+  <li *ngFor="let product of products">
+    <div class="card">
+      <div class="box">
+        <img [src]="product.imageUrl" class="card-img-top" alt="image" />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ product.productName }}</h5>
+        <p class="card-text">
+          {{ product.discription }}
+        </p>
+        <a
+          (click)="onSelect(product)"
+          routerLink="/product-details"
+          class="btn btn-primary"
+          >تفاصيل</a
+        >
+      </div>
+    </div>
+  </li>
+</ul>
