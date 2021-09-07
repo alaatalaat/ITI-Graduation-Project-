@@ -1,26 +1,172 @@
-<table class="table">
-    <thead>
-      <tr cl>
-        <th class="col-1"> رقم المنتج</th>
-        <th class="col-1"> اسم المنتج</th>
-        <th class="col-1"> كود المنتج </th>
-        <th class="col-1"> تاريح المنتج </th>
-        <th class="col-5">وصف المنتج </th>
-        <th class="col-1">حجم المنتج </th>
-        <th class="col-1"> شكل المنتج </th>
-        <th class="col-1"> صورة المنتج</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let product of products">
-        <th>{{product.productId}}</th>
-        <td>{{product.productName}}</td>
-        <td>{{product.productCode}}</td>
-        <td>{{product.releaseDate}}</td>
-        <td>{{product.description}}</td>
-        <td>{{product.size}}</td>
-        <td>{{product.form}}</td>
-        <td><img [src]="product.imageUrl" width="100" height="100"></td>
-      </tr>
-    </tbody>
-  </table>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <h1 class="text-light">الاعدادات</h1>
+    <div class="d-flex">
+      <button
+        (click)="emptyFormOnAdd()"
+        type="button"
+        class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        اضافة منتج
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">تفاصيل المنتج</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="fromValue">
+          <div class="mb-3">
+            <p>اسم المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <p>كود المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <p>تاريح المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <p>وصف المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <p>حجم المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <p>شكل المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <p>صورة المنتج</p>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="textHelp"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          id="cancel"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          الغاء
+        </button>
+        <button
+          type="button"
+          *ngIf="showAdd"
+          (click)="postProductDetails()"
+          class="btn btn-primary"
+        >
+          اضافة
+        </button>
+        <button
+          type="button"
+          *ngIf="showUpdate"
+          (click)="updateProduct()"
+          class="btn btn-primary"
+        >
+          تحديث
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- table -->
+
+<table class="table container text-center">
+  <thead>
+    <tr cl>
+      <th class="col-1">رقم المنتج</th>
+      <th class="col-2">اسم المنتج</th>
+      <th class="col-1">كود المنتج</th>
+      <th class="col-1">تاريح المنتج</th>
+      <th class="col-3">وصف المنتج</th>
+      <th class="col-1">حجم المنتج</th>
+      <th class="col-1">شكل المنتج</th>
+      <th class="col-1">صورة المنتج</th>
+      <th class="col-1">تعديل</th>
+      <th class="col-1">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of itemData">
+      <th>{{ product.productId }}</th>
+      <td>{{ product.productName }}</td>
+      <td>{{ product.productCode }}</td>
+      <td>{{ product.releaseDate }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.size }}</td>
+      <td>{{ product.form }}</td>
+      <td><img [src]="product.imageUrl" width="100" height="100" /></td>
+      <td>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          class="btn btn-primary"
+          (click)="editProduct(product)"
+        >
+          تعديل
+        </button>
+      </td>
+      <td>
+        <button (click)="deleteProduct(product)" class="btn btn-danger">
+          حذف
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -19,7 +19,7 @@ import { ForDocsSliderComponent } from './first-nav-links/for-docs-slider/for-do
 import { ForInsurersComponent } from './first-nav-links/for-insurers/for-insurers.component';
 import { ForInsurersSliderComponent } from './first-nav-links/for-insurers-slider/for-insurers-slider.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ConvertToSpacesPipe } from './pipe/convert-to-spaces.pipe';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
@@ -57,6 +57,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AppRoutingModule,
     CarouselModule,
     SwiperModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

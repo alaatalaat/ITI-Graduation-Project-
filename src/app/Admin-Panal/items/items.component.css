@@ -1,2 +1,21 @@
-table thead{background:#12233F;color: #fff;font-family: Tajawal-extraBold !important}
-table{font-family: Tajawal-extraBold !important}
+* {
+  direction: rtl;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-header .btn-close {
+  margin-right: 310px;
+}
+form p {
+  text-align: right;
+}
+table thead {
+  background: #12233f;
+  color: #fff;
+  font-family: Tajawal-extraBold !important;
+}
+table {
+  font-family: Tajawal-extraBold !important;
+}
