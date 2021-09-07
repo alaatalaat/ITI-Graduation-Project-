@@ -25,6 +25,7 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { BuyNowComponent } from './products/buy-now/buy-now.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { BlogComponent } from './blog/blog.component';
     ProductDetailsComponent,
     BuyNowComponent,
     BlogComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
