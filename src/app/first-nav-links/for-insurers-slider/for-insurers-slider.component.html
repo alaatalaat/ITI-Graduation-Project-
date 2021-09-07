@@ -1,84 +1,83 @@
-<div class="content-two">
-  <swiper
-    [slidesPerView]="1"
-    [spaceBetween]="30"
-    [loop]="true"
-    [pagination]="{
-      clickable: true
-    }"
-    [navigation]="true"
-    class="mySwiper"
+<div class="doc-content">
+  <div
+    id="carouselExampleControls"
+    class="carousel slide pb-2 py-md-5"
+    data-ride="carousel"
   >
-    <ng-template swiperSlide>
-      <div class="x-content">
-        <h1>It’s Never Been Easier</h1>
-        <h2>With a swipe and a tap, patients can now use their insurance</h2>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <h1>تجربة التأمين الطبي بكل سهولة</h1>
+        <h2>يمكن للمرضى الآن الاستفادة بتأمينهم الطبي بخطوات بسيطة</h2>
         <p>
-          It only takes a few easy steps on your Yodawy app to sign up with your
-          health insurance card and order your medications. Scroll right to see
-          the required steps
+          كل ما تحتاجه هو تنفيذ خطوات بسيطة على تطبيق يُداوي لتسجيل بيانات بطاقة
+          التأمين وطلب احتياجاتك التأمينية. اسحب الشاشة لليمين لتعرف الخطوات.
         </p>
       </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="x-content">
-        <h1>Scan Your Card</h1>
+      <div class="carousel-item">
+        <h1>صوّر بطاقة التأمين</h1>
         <p>
-          Once you login to Yodawy app, it will only take you a few minutes to
-          complete your registration by scanning your insurance card or manually
-          entering your insurance data.
-        </p>
-        <p>It’s as easy as:</p>
-        <ul>
-          <li>Choose your Healthcare provider to register</li>
-          <li>Scan your insurance card</li>
-          <li>Get verified instantly</li>
-        </ul>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="x-content">
-        <h1>Upload Your Prescription</h1>
-        <p>
-          Upon completing your insurance registration, upload your insurance or
-          monthly prescription. Confirm your request, sit back, and relax while
-          we get approval for you.
+          بمجرد تسجيل الدخول على تطبيق يُداوي، تستطيع إكمال التسجيل في بضع دقائق
+          عن طريق إضافة بيانات بطاقة التأمين.
         </p>
         <ul>
-          <li>Upload your prescription</li>
-          <li>Checkout with your cart</li>
-          <li>Select your delivery address</li>
+          <li>اختر مقدم خدمة التأمين الصحي</li>
+          <li>صوّر بطاقة التأمين</li>
+          <li>احصل على موافقة فورية</li>
         </ul>
       </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="x-content">
-        <h1>Get Your Insurance Approval</h1>
+      <div class="carousel-item">
+        <h1>حمّل روشتتك الطبية</h1>
         <p>
-          As soon as we receive your prescription, our AI-powered engine takes
-          over and the magic begins. We do the work for you:
+          بعد تسجيل بياناتك التأمينية، قُم بتحميل روشتتك الطبية. ولا تشغل بالك
+          بمجرد تأكيد طلبك، حيث سيقوم يُداوي بالمطلوب.
         </p>
         <ul>
-          <li>Process the order</li>
-          <li>Get your approval</li>
-          <li>Forward it to your insurance provider</li>
-          <li>Send your order with the approval to a licensed pharmacy</li>
+          <li>حمّل روشتتك الطبية</li>
+          <li>أضف عنوان التوصيل</li>
+          <li>اختر طريقة الدفع</li>
         </ul>
       </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="x-content">
-        <h1>Receive Your Insurance Items</h1>
+      <div class="carousel-item active">
+        <h1>احصل على موافقة التأمين</h1>
         <p>
-          Your insurance items will arrive effortlessly to your doorstep. Just
-          like that.
+          بمجرد استلامنا للروشتة، سيقوم المُحرّك المدعوم بالذكاء الاصطناعي
+          بسرعةٍ شبه فورية بتنفيذ الآتي:
         </p>
         <ul>
-          <li>No waiting queues</li>
-          <li>No pharmacy visits</li>
-          <li>No filling of forms</li>
+          <li>تحويل الطلب إلى شركة التأمين الخاصة</li>
+          <li>الحصول على الموافقة</li>
+          <li>إرسال الموافقة التأمينية مع طلبك إلى أقرب صيدلية معتمدة</li>
         </ul>
       </div>
-    </ng-template>
-  </swiper>
+      <div class="carousel-item">
+        <h1>احصل على طلبات روشتة التأمين في المنزل</h1>
+        <p>
+          في أسرع وقتٍ ممكن، ستصلك طلبات روشتة التأمين بأقل مجهود إلى باب منزلك.
+        </p>
+        <ul>
+          <li>بدون الانتظار في طوابير</li>
+          <li>بدون ملء استمارات</li>
+          <li>بدون زيارة صيدليات</li>
+        </ul>
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleControls"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleControls"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>

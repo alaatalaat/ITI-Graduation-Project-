@@ -1,5 +1,5 @@
 * {
-  text-align: center;
+  text-align: right;
   direction: rtl;
 }
 
@@ -9,7 +9,8 @@
 }
 
 .card-text span {
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-right: 0;
   color: rgb(179, 179, 179);
 }
 

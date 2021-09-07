@@ -9,6 +9,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { BuyNowComponent } from './products/buy-now/buy-now.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'for-docs-slider', component: ForDocsSliderComponent },
   { path: 'for-insures', component: ForInsurersComponent },
   { path: 'for-insures-slider', component: ForInsurersSliderComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'contact', component: ContactUsComponent },
   { path: 'shop', component: ProductListComponent },
   {
     path: 'product-details/:name/:description/:size/:releaseDate/:form',

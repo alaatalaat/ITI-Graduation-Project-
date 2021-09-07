@@ -24,7 +24,12 @@ import { ConvertToSpacesPipe } from './pipe/convert-to-spaces.pipe';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { BuyNowComponent } from './products/buy-now/buy-now.component';
+<<<<<<< HEAD
 import { ItemsComponent } from './Admin-Panal/items/items.component';
+=======
+import { BlogComponent } from './blog/blog.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+>>>>>>> b2c193c6718d2049c3f36b323b3a47a2851da777
 
 @NgModule({
   declarations: [
@@ -43,7 +48,12 @@ import { ItemsComponent } from './Admin-Panal/items/items.component';
     ProductListComponent,
     ProductDetailsComponent,
     BuyNowComponent,
+<<<<<<< HEAD
     ItemsComponent,
+=======
+    BlogComponent,
+    ContactUsComponent,
+>>>>>>> b2c193c6718d2049c3f36b323b3a47a2851da777
   ],
   imports: [
     BrowserModule,
