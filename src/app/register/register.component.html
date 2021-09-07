@@ -1,0 +1,43 @@
+<div class="content">
+    <form #login="ngForm" class="">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-10 col-12">
+                    <input #n1="ngModel" type="text" name="fname" [(ngModel)]="fname" required minlength="3" maxlength="7">        
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5>الاسم الاول</h5> 
+                </div>
+                <span *ngIf="n1.errors?.required && n1.touched" >الاسم الاول مطلوب!</span>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-10 col-12">
+                    <input #n2="ngModel" type="text" name="lname" [(ngModel)]="lname" required maxlength="7">        
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5>الاسم الاخير</h5>
+                </div>
+                <span *ngIf="n2.invalid  && n2.touched" [hidden]="!n2.errors?.required">الاسم الاخير مطلوب!</span>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-10 col-12">
+                    <input #n3="ngModel" type="email" name="email" [(ngModel)]="email" required maxlength="12">        
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5>البريد الاليكتروني</h5>
+                </div>
+                <span *ngIf="n3.invalid  && n3.touched" [hidden]="!n3.errors?.required">مطلوب البريد الاليكتروني!</span>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-10 col-12">
+                    <input #n4="ngModel" type="number" name="phone" [(ngModel)]="phone" required maxlength="12">        
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5>رقم التليفون</h5>
+                </div>
+                <span *ngIf="n4.invalid  && n4.touched" [hidden]="!n4.errors?.required">مطلوب رقم الهاتف!</span>
+            </div>
+        </div>
+       <input class="mt-4" type="submit" value="التسجيل" [disabled]="login.invalid" (click)="loginpage(n1,n2)">
+    </form>
+</div>    

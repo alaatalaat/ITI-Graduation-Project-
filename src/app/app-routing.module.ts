@@ -11,6 +11,9 @@ import { ProductDetailsComponent } from './products/product-details/product-deta
 import { BuyNowComponent } from './products/buy-now/buy-now.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ItemsComponent } from './Admin-Panal/items/items.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -25,6 +28,9 @@ const routes: Routes = [
     path: 'product-details/:name/:description/:size/:releaseDate/:form',
     component: ProductDetailsComponent,
   },
+  {path: 'login' ,component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path: 'admin' ,component:ItemsComponent },
   { path: 'buynow', component: BuyNowComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },

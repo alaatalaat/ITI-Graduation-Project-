@@ -29,6 +29,7 @@ import { ItemsComponent } from './Admin-Panal/items/items.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { LoginComponent } from './login/login.component';
     BlogComponent,
     ContactUsComponent,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
