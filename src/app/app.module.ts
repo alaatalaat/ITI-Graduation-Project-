@@ -24,6 +24,7 @@ import { ConvertToSpacesPipe } from './pipe/convert-to-spaces.pipe';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { BuyNowComponent } from './products/buy-now/buy-now.component';
+import { ItemsComponent } from './Admin-Panal/items/items.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { BuyNowComponent } from './products/buy-now/buy-now.component';
     ProductListComponent,
     ProductDetailsComponent,
     BuyNowComponent,
+    ItemsComponent,
   ],
   imports: [
     BrowserModule,

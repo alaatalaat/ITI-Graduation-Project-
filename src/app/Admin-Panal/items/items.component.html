@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr cl>
+        <th class="col-1"> رقم المنتج</th>
+        <th class="col-1"> اسم المنتج</th>
+        <th class="col-1"> كود المنتج </th>
+        <th class="col-1"> تاريح المنتج </th>
+        <th class="col-5">وصف المنتج </th>
+        <th class="col-1">حجم المنتج </th>
+        <th class="col-1"> شكل المنتج </th>
+        <th class="col-1"> صورة المنتج</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th>{{product.productId}}</th>
+        <td>{{product.productName}}</td>
+        <td>{{product.productCode}}</td>
+        <td>{{product.releaseDate}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.size}}</td>
+        <td>{{product.form}}</td>
+        <td><img [src]="product.imageUrl" width="100" height="100"></td>
+      </tr>
+    </tbody>
+  </table>
