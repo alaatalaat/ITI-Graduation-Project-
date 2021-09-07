@@ -6,5 +6,5 @@ export class ItemModel {
   description: string = '';
   size: string = '';
   form: string = '';
-  imgUrl: string = '';
+  imageUrl: string = '';
 }

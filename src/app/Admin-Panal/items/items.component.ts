@@ -16,7 +16,7 @@ export class ItemsComponent implements OnInit {
   itemData!: any;
   showAdd!: boolean;
   showUpdate!: boolean;
-  // products: any = [];
+
   constructor(
     private formbuilder: FormBuilder,
     private api: ApiService,
@@ -24,13 +24,6 @@ export class ItemsComponent implements OnInit {
     private router: Router
   ) {}
   ngOnInit() {
-    // this.httpClient
-    //   .get('assets/api/products/products.json')
-    //   .subscribe((data) => {
-    //     console.log(data);
-    //     this.products = data;
-    //   });
-
     this.fromValue = this.formbuilder.group({
       productName: [''],
       productCode: [''],
@@ -38,7 +31,7 @@ export class ItemsComponent implements OnInit {
       description: [''],
       size: [''],
       form: [''],
-      imgUrl: [''],
+      imageUrl: [''],
     });
     this.getAllData();
   }
@@ -56,7 +49,7 @@ export class ItemsComponent implements OnInit {
     this.itemModelObj.description = this.fromValue.value.description;
     this.itemModelObj.size = this.fromValue.value.size;
     this.itemModelObj.form = this.fromValue.value.form;
-    this.itemModelObj.imgUrl = this.fromValue.value.imgUrl;
+    this.itemModelObj.imageUrl = this.fromValue.value.imageUrl;
 
     this.api.postProduct(this.itemModelObj).subscribe(
       (res) => {
@@ -97,7 +90,7 @@ export class ItemsComponent implements OnInit {
     this.fromValue.controls['description'].setValue(product.description);
     this.fromValue.controls['size'].setValue(product.size);
     this.fromValue.controls['form'].setValue(product.form);
-    this.fromValue.controls['imgUrl'].setValue(product.imgUrl);
+    this.fromValue.controls['imageUrl'].setValue(product.imageUrl);
   }
 
   updateProduct() {
@@ -107,7 +100,7 @@ export class ItemsComponent implements OnInit {
     this.itemModelObj.description = this.fromValue.value.description;
     this.itemModelObj.size = this.fromValue.value.size;
     this.itemModelObj.form = this.fromValue.value.form;
-    this.itemModelObj.imgUrl = this.fromValue.value.imgUrl;
+    this.itemModelObj.imageUrl = this.fromValue.value.imageUrl;
 
     this.api
       .updateProduct(this.itemModelObj, this.itemModelObj.productId)
