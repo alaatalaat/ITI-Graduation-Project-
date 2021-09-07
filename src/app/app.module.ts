@@ -28,6 +28,7 @@ import { BuyNowComponent } from './products/buy-now/buy-now.component';
 import { ItemsComponent } from './Admin-Panal/items/items.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ItemsComponent,
     BlogComponent,
     ContactUsComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

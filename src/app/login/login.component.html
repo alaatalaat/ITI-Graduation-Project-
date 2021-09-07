@@ -1,0 +1,29 @@
+<div class="content">
+    <form #login="ngForm" (ngSubmit)="display()" class="">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-9 col-12">
+                    <input #n1="ngModel" type="text" name="username" [(ngModel)]="username" required minlength="3" maxlength="7">        
+                </div>
+                <div class="col-lg-3 col-12">
+                    <h5>اسم المستخدم</h5> 
+                </div>
+                <span *ngIf="n1.errors?.required && n1.touched" >اسم المستخدم مطلوب!</span>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-9 col-12">
+                    <input #n2="ngModel" type="password" name="password" [(ngModel)]="password" required maxlength="7">        
+                </div>
+                <div class="col-lg-3 col-12">
+                    <h5>الرقم السري</h5>
+                </div>
+                <span *ngIf="n2.invalid  && n2.touched" [hidden]="!n2.errors?.required">الرقم السري مطلوب!</span>
+            </div>
+        </div>
+       <input class="mt-4" type="submit" value="تسجيل الدخول" [disabled]="login.invalid" (click)="redAdmin(n1,n2)">
+       <br>
+       <span class="errormsg" [hidden]="errormsgflag">{{errormsg}}</span>
+       <br>
+       <a href="/register">قم بالتسجيل كا مدير؟</a>
+    </form>
+</div>    
