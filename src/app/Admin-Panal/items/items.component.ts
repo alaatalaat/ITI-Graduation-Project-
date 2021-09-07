@@ -73,7 +73,7 @@ export class ItemsComponent implements OnInit {
   }
 
   deleteProduct(product: any) {
-    this.api.deleteProduct(product.productId).subscribe((res) => {
+    this.api.deleteProduct(product.id).subscribe((res) => {
       alert('تم الحذف');
       this.getAllData();
     });
@@ -83,7 +83,7 @@ export class ItemsComponent implements OnInit {
     this.showAdd = true;
     this.showUpdate = false;
 
-    this.itemModelObj.productId = product.productId;
+    this.itemModelObj.id = product.id;
     this.fromValue.controls['productName'].setValue(product.productName);
     this.fromValue.controls['productCode'].setValue(product.productCode);
     this.fromValue.controls['releaseDate'].setValue(product.releaseDate);
@@ -103,7 +103,7 @@ export class ItemsComponent implements OnInit {
     this.itemModelObj.imageUrl = this.fromValue.value.imageUrl;
 
     this.api
-      .updateProduct(this.itemModelObj, this.itemModelObj.productId)
+      .updateProduct(this.itemModelObj, this.itemModelObj.id)
       .subscribe((res) => {
         alert('تم تحديث المنتج بنجاح');
         let ref = document.getElementById('cancel');

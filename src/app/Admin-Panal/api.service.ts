@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 export class ApiService {
   constructor(private http: HttpClient) {}
   postProduct(data: any) {
-    return this.http.post<any>('http://localhost:3000/posts', data).pipe(
+    return this.http.post<any>('http://localhost:3001/posts', data).pipe(
       map((res: any) => {
         return res;
       })
@@ -16,7 +16,7 @@ export class ApiService {
   }
 
   getProduct() {
-    return this.http.get<any>('http://localhost:3000/posts').pipe(
+    return this.http.get<any>('http://localhost:3001/posts/').pipe(
       map((res: any) => {
         return res;
       })
@@ -24,7 +24,7 @@ export class ApiService {
   }
 
   updateProduct(data: any, id: number) {
-    return this.http.put<any>('http://localhost:3000/posts' + id, data).pipe(
+    return this.http.put<any>('http://localhost:3001/posts/' + id, data).pipe(
       map((res: any) => {
         return res;
       })
@@ -32,7 +32,7 @@ export class ApiService {
   }
 
   deleteProduct(id: number) {
-    return this.http.delete<any>('http://localhost:3000/posts' + id).pipe(
+    return this.http.delete<any>('http://localhost:3001/posts/' + id).pipe(
       map((res: any) => {
         return res;
       })

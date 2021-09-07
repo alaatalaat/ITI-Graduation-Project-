@@ -1,5 +1,5 @@
 export class ItemModel {
-  productId: number = 0;
+  id: number = 0;
   productName: string = '';
   productCode: string = '';
   releaseDate: string = '';
