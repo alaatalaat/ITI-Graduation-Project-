@@ -1,20 +1,13 @@
-/* @import "~swiper/swiper";
-@import "~swiper/components/navigation/navigation";
-@import "~swiper/components/pagination/pagination"; */
-/* @import "~swiper/css";
-@import "~swiper/css/pagination"; */
-
-.swiper-container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .content {
   background-color: #02408a;
   color: #fff;
   height: 100vh;
   text-align: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  margin-bottom: -50px;
+  direction: rtl;
 }
 .content a {
   position: absolute;
