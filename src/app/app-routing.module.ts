@@ -14,6 +14,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ItemsComponent } from './Admin-Panal/items/items.component';
+import { PharmaciesComponent } from './first-nav-links/pharmacies/pharmacies.component';
+import { AboutYodawyComponent } from './first-nav-links/about-yodawy/about-yodawy.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -28,10 +30,12 @@ const routes: Routes = [
     path: 'product-details/:name/:description/:size/:releaseDate/:form',
     component: ProductDetailsComponent,
   },
-  {path: 'login' ,component:LoginComponent},
-  {path:'register',component:RegisterComponent},
-  {path: 'admin' ,component:ItemsComponent },
   { path: 'buynow', component: BuyNowComponent },
+  { path: 'pharmacies', component: PharmaciesComponent },
+  { path: 'about-us', component: AboutYodawyComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'admin', component: ItemsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];

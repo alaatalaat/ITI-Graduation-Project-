@@ -30,6 +30,8 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { PharmaciesComponent } from './first-nav-links/pharmacies/pharmacies.component';
+import { AboutYodawyComponent } from './first-nav-links/about-yodawy/about-yodawy.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { RegisterComponent } from './register/register.component';
     ContactUsComponent,
     LoginComponent,
     RegisterComponent,
+    PharmaciesComponent,
+    AboutYodawyComponent,
   ],
   imports: [
     BrowserModule,
