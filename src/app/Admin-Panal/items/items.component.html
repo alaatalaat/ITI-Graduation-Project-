@@ -152,7 +152,7 @@
     <tr *ngFor="let product of itemData">
       <th>{{ product.id }}</th>
       <td>{{ product.productName }}</td>
-      <td>{{ product.productCode }}</td>
+      <td>{{ product.productCode | lowercase | convertToSpaces: "-" }}</td>
       <td>{{ product.releaseDate }}</td>
       <td>{{ product.description }}</td>
       <td>{{ product.size }}</td>
