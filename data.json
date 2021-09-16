@@ -1,20 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "productId": 1,
-      "productName": "أروما جرين لاين جل استحمام بخلاصة الرومان والمانجو، 400 مل",
-      "productCode": "AAA-111",
-      "releaseDate": "March 19, 2021",
-      "description": "اروما سائل استحمام بتركيبته التي تمنح عطر يدوم طويلا n•تركيبة الترطيب تجعل البشرة ناعمة وسلسةn•خالي من الباربين و الصابون ليناسب البشرة الحساسة و يمنع الجفاف و الالتهابات",
-      "size": "400 ملي",
-      "price": 25,
-      "category": "مستلزمات الاستحمام",
-      "form": "جل استحمام",
-      "quantity": 49,
-      "imageUrl": "./assets/Products/aroma-green-line.jpg"
-    },
-    {
       "id": 2,
       "productId": 2,
       "productName": "أروما جل الاستحمام السائل برائحة البلاك أوركيد، 400 مل",
@@ -25,7 +11,7 @@
       "price": 35,
       "category": "مستلزمات الاستحمام",
       "form": "جل استحمام",
-      "quantity": 7,
+      "quantity": 500,
       "imageUrl": "assets/Products/aroma-black-orchid.jpg"
     },
     {
@@ -235,7 +221,7 @@
       "price": 25,
       "category": "العناية بالشعر",
       "form": "جل",
-      "quantity": 34,
+      "quantity": 33,
       "imageUrl": "assets/Products/18.jpg"
     },
     {
@@ -265,6 +251,17 @@
       "form": "بلسم",
       "quantity": 40,
       "imageUrl": "assets/Products/20.jpg"
+    },
+    {
+      "id": 21,
+      "productName": "jkmbhjkl",
+      "productCode": "122-11",
+      "releaseDate": "kld",
+      "description": ";lkm;s",
+      "size": "20",
+      "form": "lkn",
+      "quantity": 331,
+      "imageUrl": "assets/Products/21.png"
     }
   ],
   "users": [
@@ -281,6 +278,13 @@
       "email": "admin@gmail.com",
       "password": "admin",
       "id": 1
+    },
+    {
+      "fullname": "ahmed salem",
+      "mobile": 89712896,
+      "email": "ahmed@gmail.com",
+      "password": "1234567",
+      "id": 3
     }
   ]
 }
