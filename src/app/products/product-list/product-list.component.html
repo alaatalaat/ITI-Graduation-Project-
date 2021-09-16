@@ -1,23 +1,73 @@
-<!-- <div class="card-top container-fluid">
+<div class="card-top container-fluid">
   <div class="container d-flex">
-    <div class="item">
-      <a><h4>All Products</h4></a>
-    </div>
-    <div class="item">
-      <a><h4>Product One</h4></a>
-    </div>
-    <div class="item">
-      <a><h4>Product Two</h4></a>
-    </div>
-    <div class="item">
-      <a><h4>Product Three</h4></a>
-    </div>
+    <nav class="navbar navbar-expand-lg second-navbar">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li>
+            <div class="item">
+              <a (click)="filter('')">كل المنتجات</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="item">
+              <a (click)="filter('مستلزمات الاستحمام')">مستلزمات الاستحمام</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="item">
+              <a (click)="filter('مستلزمات الأطفال')">مستلزمات الاطفال</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">عالم المرأة </a>
+          </li>
+          <li class="nav-item">
+            <div class="item">
+              <a (click)="filter('العناية بالشعر')">العناية بالشعر</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">مستحضرات التجميل </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">منتجات التجميل الطبية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">مستلزمات الرجال </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">العناية بالفم</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">الصحة الجنسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">العناية الشخصية </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/shop">عدسات لاصقة</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
-</div> -->
+</div>
 
 <div class="container" id="top">
   <div class="row">
-    <ng-container *ngFor="let item of products">
+    <ng-container *ngFor="let item of filterCategory">
       <div class="card col-md-3">
         <img src="{{ item.imageUrl }}" alt="image" />
         <h3

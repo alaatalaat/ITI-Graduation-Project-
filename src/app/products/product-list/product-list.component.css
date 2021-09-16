@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+li .item a {
+  font-size: 14px;
+  color: #12233f;
+  font-weight: bold;
+}
+
 #top {
   display: flex;
   justify-content: space-evenly;
@@ -67,7 +73,7 @@
   margin-right: 310px;
 }
 
-/* .cart-top {
+.cart-top {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -89,9 +95,10 @@
 }
 
 .item a:hover {
-  color: blue;
-} 
-
+  color: rgb(39, 39, 129);
+  cursor: pointer;
+}
+/*
 ul {
   list-style: none;
   display: flex;

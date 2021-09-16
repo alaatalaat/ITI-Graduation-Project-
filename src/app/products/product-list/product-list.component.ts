@@ -18,6 +18,7 @@ export class ProductListComponent implements OnInit {
   quantity!: any;
   imageUrl!: any;
   public products: any;
+  public filterCategory: any;
   constructor(
     private api: ApiService,
     private cartService: CartService,
@@ -26,6 +27,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.api.getProduct().subscribe((res) => {
       this.products = res;
+      this.filterCategory = res;
       this.products.forEach((a: any) => {
         Object.assign(a, { total: a.price });
       });
@@ -62,5 +64,12 @@ export class ProductListComponent implements OnInit {
   }
   clearStorage() {
     localStorage.clear();
+  }
+  filter(category: string) {
+    this.filterCategory = this.products.filter((a: any) => {
+      if (a.category == category || category == '') {
+        return a;
+      }
+    });
   }
 }

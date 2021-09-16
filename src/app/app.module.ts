@@ -35,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CartComponent } from './products/cart/cart.component';
 import { UsersComponent } from './Admin-Panal/users/users.component';
 import { ProfileComponent } from './profile/profile.component';
+import { FilterPipe } from './pipe/filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +50,7 @@ import { ProfileComponent } from './profile/profile.component';
     ForInsurersComponent,
     ForInsurersSliderComponent,
     ConvertToSpacesPipe,
+    FilterPipe,
     ProductListComponent,
     ProductDetailsComponent,
     BuyNowComponent,
