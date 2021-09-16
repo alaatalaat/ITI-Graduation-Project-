@@ -49,7 +49,6 @@ export class LoginComponent implements OnInit {
             this.loginForm.value.password === 'admin'
           ) {
             this.router.navigate(['admin']);
-            location.reload();
           } else {
             location.reload();
             this.router.navigate(['home']);

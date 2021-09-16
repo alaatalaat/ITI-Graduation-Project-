@@ -15,7 +15,7 @@
   </div>
 </div> -->
 
-<div class="container">
+<div class="container" id="top">
   <div class="row">
     <ng-container *ngFor="let item of products">
       <div class="card col-md-3">
@@ -40,12 +40,88 @@
         >
           {{ item.description }}
         </p>
-        <p><strong>Price: </strong>{{ item.price | currency }}</p>
+        <p><strong>السعر: </strong>{{ item.price | currency }}</p>
+        <p><strong>الكمية: </strong>{{ item.quantity }}</p>
         <button class="btn btn-primary pt-1 pb-1" (click)="addToCart(item)">
           اضافة الي المشتريات
         </button>
+        <button
+          type="button"
+          class="btn btn-success mt-2 pt-1 pb-1"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          (click)="showItem(item); getData()"
+        >
+          تفاصيل عن المنتج
+        </button>
       </div>
     </ng-container>
+  </div>
+</div>
+
+<!-- modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  style="width: 100%"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header p-3">
+        <h5 class="modal-title" id="exampleModalLabel">تفاصيل المنتج</h5>
+        <button
+          type="button"
+          class="btn-close pt-3"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="card mb-3 border-0" style="max-width: 1000px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img [src]="imageUrl" class="img-fluid rounded-start" alt="..." />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ productName }}</h5>
+                <hr />
+                <p class="card-text">
+                  <span>الوصف:</span>
+                  {{ description }}
+                </p>
+                <p class="card-text">
+                  <span>الحجم:</span>
+                  {{ size }}
+                </p>
+                <p class="card-text">
+                  <span>النوع:</span>
+                  <small class="text-muted"> {{ form }}</small>
+                </p>
+                <p class="card-text">
+                  <span>الكمية:</span>
+                  <small class="text-muted"> {{ quantity }}</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          id="cancel"
+          class="btn btn-secondary m-2"
+          data-bs-dismiss="modal"
+          (click)="clearStorage()"
+        >
+          الغاء
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 

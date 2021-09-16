@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'shop', component: ProductListComponent },
   { path: 'cart', component: CartComponent },
   {
-    path: 'product-details/:name/:description/:size/:releaseDate/:form',
+    path: 'product-details',
     component: ProductDetailsComponent,
   },
   { path: 'buynow', component: BuyNowComponent },

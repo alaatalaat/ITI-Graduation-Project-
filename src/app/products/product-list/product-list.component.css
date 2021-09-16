@@ -1,4 +1,73 @@
-.cart-top {
+* {
+  text-align: right;
+  direction: rtl;
+  padding: 0;
+}
+
+#top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#top .card {
+  padding: 20px;
+  margin: 30px;
+}
+
+#top .btn {
+  text-align: center;
+}
+
+#top .card img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+#top .card img :hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.modal-dialog .card {
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.modal-dialog .card-text span {
+  margin-left: 10px;
+  margin-right: 0;
+  color: rgb(179, 179, 179);
+}
+
+.modal-dialog .card-body {
+  text-align-last: right;
+}
+
+.modal-dialog .card-body a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 40px;
+  font-size: 20px;
+}
+
+.modal-dialog .btn {
+  padding: 5px 20px;
+}
+
+.modal-header .btn-close {
+  margin-right: 310px;
+}
+
+/* .cart-top {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,11 +83,6 @@
   -o-border-radius: 0.25rem;
 }
 
-.card {
-  padding: 20px;
-  margin: 30px;
-}
-
 .item {
   margin: 0 15px;
   text-align: center;
@@ -26,31 +90,8 @@
 
 .item a:hover {
   color: blue;
-}
+} 
 
-.card img {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 15px;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -ms-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-}
-
-.card img :hover {
-  transition: 0.3s ease-in-out;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-
-* {
-  padding: 0;
-}
 ul {
   list-style: none;
   display: flex;
@@ -79,7 +120,4 @@ ul .card {
   width: 300px;
   padding: 10px;
 }
-
-.card-body .btn {
-  padding: 10px 20px;
-}
+*/

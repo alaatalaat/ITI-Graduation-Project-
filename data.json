@@ -11,7 +11,7 @@
       "price": 25,
       "category": "مستلزمات الاستحمام",
       "form": "جل استحمام",
-      "quantity": 50,
+      "quantity": 49,
       "imageUrl": "./assets/Products/aroma-green-line.jpg"
     },
     {
@@ -29,6 +29,20 @@
       "imageUrl": "assets/Products/aroma-black-orchid.jpg"
     },
     {
+      "id": 3,
+      "productId": 3,
+      "productName": "أروما فريش صابون برائحة الاوركيد الوردي, 75 جم",
+      "productCode": "BBB-222",
+      "releaseDate": "June 20, 2021",
+      "description": "أروما فريش صابون برائحة الاوركيد الوردي",
+      "size": "75 جم",
+      "price": 15,
+      "category": "مستلزمات الاستحمام",
+      "form": "الصابون",
+      "quantity": 30,
+      "imageUrl": "assets/Products/aroma-soap.jpg"
+    },
+    {
       "id": 4,
       "productId": 4,
       "productName": "أريج شاور جل برائحة الورد البري، 250 مل، AR1173",
@@ -39,7 +53,7 @@
       "price": 25,
       "category": "مستلزمات الاستحمام",
       "form": "جل",
-      "quantity": 5,
+      "quantity": 4,
       "imageUrl": "assets/Products/areej-shower-jel.jpg"
     },
     {

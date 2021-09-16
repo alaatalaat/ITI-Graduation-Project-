@@ -1,23 +1,27 @@
 <div class="card mb-3" style="max-width: 1000px">
   <div class="row g-0">
     <div class="col-md-4">
-      <img [src]="" class="img-fluid rounded-start" alt="..." />
+      <img [src]="imageUrl" class="img-fluid rounded-start" alt="..." />
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">{{ product.name }}</h5>
+        <h5 class="card-title">{{ productName }}</h5>
         <hr />
         <p class="card-text">
           <span>الوصف:</span>
-          {{ product.description }}
+          {{ description }}
         </p>
         <p class="card-text">
           <span>الحجم:</span>
-          {{ product.size }}
+          {{ size }}
         </p>
         <p class="card-text">
           <span>النوع:</span>
-          <small class="text-muted"> {{ product.form }}</small>
+          <small class="text-muted"> {{ form }}</small>
+        </p>
+        <p class="card-text">
+          <strong>الكمية:</strong>
+          <span class="text-muted"> {{ quantity }}</span>
         </p>
         <a class="btn btn-success" routerLink="/buynow">شراء الان</a>
       </div>
