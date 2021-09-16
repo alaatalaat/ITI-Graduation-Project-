@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ForDocsSliderComponent } from './first-nav-links/for-docs-slider/for-docs-slider.component';
 import { ForDocsComponent } from './first-nav-links/for-docs/for-docs.component';
@@ -16,9 +16,18 @@ import { RegisterComponent } from './register/register.component';
 import { ItemsComponent } from './Admin-Panal/items/items.component';
 import { PharmaciesComponent } from './first-nav-links/pharmacies/pharmacies.component';
 import { AboutYodawyComponent } from './first-nav-links/about-yodawy/about-yodawy.component';
+import { CartComponent } from './products/cart/cart.component';
+import { UsersComponent } from './Admin-Panal/users/users.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'admin', component: ItemsComponent },
+  { path: 'users', component: UsersComponent },
   { path: 'home', component: HomePageComponent },
+  { path: 'profile', component: ProfileComponent },
   { path: 'for-docs', component: ForDocsComponent },
   { path: 'for-docs-slider', component: ForDocsSliderComponent },
   { path: 'for-insures', component: ForInsurersComponent },
@@ -26,6 +35,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'shop', component: ProductListComponent },
+  { path: 'cart', component: CartComponent },
   {
     path: 'product-details/:name/:description/:size/:releaseDate/:form',
     component: ProductDetailsComponent,
@@ -33,10 +43,6 @@ const routes: Routes = [
   { path: 'buynow', component: BuyNowComponent },
   { path: 'pharmacies', component: PharmaciesComponent },
   { path: 'about-us', component: AboutYodawyComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'admin', component: ItemsComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 

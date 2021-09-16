@@ -24,8 +24,10 @@ export class ApiService {
   }
 
   updateProduct(data: any, id: number) {
-    return this.http.put<any>('http://localhost:3001/posts/' + id, data).pipe(
+    console.log(data);
+    return this.http.patch<any>('http://localhost:3001/posts/' + id, data).pipe(
       map((res: any) => {
+        console.log(res);
         return res;
       })
     );

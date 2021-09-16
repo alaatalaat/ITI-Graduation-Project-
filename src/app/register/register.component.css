@@ -1,4 +1,36 @@
-.content{
+.container {
+  background: hsla(205, 46%, 30%, 1);
+  background: linear-gradient(
+    90deg hsla(205, 46%, 30%, 1) 0%,
+    hsla(260, 29%, 36%, 1) 100%
+  );
+}
+.row {
+  justify-content: space-around;
+}
+.card {
+  margin: 10px auto;
+  border: none;
+  width: 500px;
+  padding: 40px;
+  background: hsla(205, 46%, 30%, 1);
+  background: linear-gradient(
+    90deg hsla(205, 46%, 30%, 1) 0%,
+    hsla(260, 29%, 36%, 1) 100%
+  );
+}
+
+.card h1,
+h6 {
+  color: #fff;
+}
+
+label {
+  color: #fff;
+}
+
+/* ========================================= */
+/* .content{
     background:  #02408a;
     height: 100vh;
     padding-top: 80px;
@@ -39,4 +71,4 @@ span{
     color: red;
     font-size: 15px;
     text-align:right !important;
-}
+} */

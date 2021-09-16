@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { ApiService } from 'src/app/services/api.service';
+import { CartService } from './../../services/cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -8,30 +10,31 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
-  products: any = [];
-  constructor(private httpClient: HttpClient, private router: Router) {}
-  ngOnInit() {
-    this.httpClient
-      .get('assets/api/products/products.json')
-      .subscribe((data) => {
-        console.log(data);
-        this.products = data;
+  email!: any;
+  public products: any;
+  constructor(
+    private api: ApiService,
+    private cartService: CartService,
+    private router: Router
+  ) {}
+  ngOnInit(): void {
+    this.api.getProduct().subscribe((res) => {
+      this.products = res;
+      this.products.forEach((a: any) => {
+        Object.assign(a, { total: a.price });
       });
+    });
+    this.email = localStorage.getItem('email');
   }
-  onSelect(product: {
-    productName: any;
-    description: any;
-    size: string;
-    releaseDate: string;
-    form: string;
-  }) {
-    this.router.navigate([
-      '/product-details',
-      product.productName,
-      product.description,
-      product.size,
-      product.releaseDate,
-      product.form,
-    ]);
+  addToCart(item: any) {
+    if (!this.email) {
+      this.router.navigate(['login']);
+      return;
+    }
+    if (item.quantity > 0) {
+      this.cartService.addToCart(item);
+    } else {
+      alert('You Cant Buy This Product Now !!');
+    }
   }
 }

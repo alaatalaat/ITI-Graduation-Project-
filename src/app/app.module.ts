@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { SwiperModule } from 'swiper/angular';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
@@ -32,7 +31,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PharmaciesComponent } from './first-nav-links/pharmacies/pharmacies.component';
 import { AboutYodawyComponent } from './first-nav-links/about-yodawy/about-yodawy.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CartComponent } from './products/cart/cart.component';
+import { UsersComponent } from './Admin-Panal/users/users.component';
+import { ProfileComponent } from './profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,6 +59,9 @@ import { AboutYodawyComponent } from './first-nav-links/about-yodawy/about-yodaw
     RegisterComponent,
     PharmaciesComponent,
     AboutYodawyComponent,
+    CartComponent,
+    UsersComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,8 +69,8 @@ import { AboutYodawyComponent } from './first-nav-links/about-yodawy/about-yodaw
     HttpClientModule,
     AppRoutingModule,
     CarouselModule,
-    SwiperModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <h1 class="text-light">الاعدادات</h1>
+    <div class="d-flex">
+      <button
+        routerLink="/admin"
+        type="button"
+        class="btn btn-primary mr-2 ml-2"
+      >
+        المنتجات
+      </button>
+    </div>
+  </div>
+</nav>
+
+<table class="table container text-center">
+  <thead>
+    <tr cl>
+      <th class="col-1">رقم العميل</th>
+      <th class="col-3">اسم العميل</th>
+      <th class="col-2">الموبايل</th>
+      <th class="col-3">الايميل</th>
+      <th class="col-2">الباسورد</th>
+      <th class="col-1">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of itemData; let i = index">
+      <th>{{ i + 1 }}</th>
+      <td>{{ user.fullname }}</td>
+      <td>{{ user.mobile }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.password }}</td>
+      <td>
+        <button (click)="deleteProduct(user)" class="btn btn-danger">
+          حذف
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

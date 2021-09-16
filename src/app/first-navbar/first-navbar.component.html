@@ -35,7 +35,17 @@
         <a class="nav-link" routerLink="/contact">تواصل معنا </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/login">تسجيل الدخول</a>
+        <button routerLink="cart" class="btn text-light">
+          <i style="font-size: 20px" class="fas fa-cart-plus"></i>
+          <div style="font-size: 10px" class="badge bg-danger">
+            {{ totalItem }}
+          </div>
+        </button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="cursor: pointer" (click)="login()">{{
+          loginText
+        }}</a>
       </li>
     </ul>
   </div>
@@ -55,7 +65,11 @@
         <a href="#"><i class="fas fa-search"></i></a>
       </div>
     </div>
-    <div class="col-sm-12 col-md-3"></div>
+    <div class="col-sm-12 col-md-3">
+      <button routerLink="/profile" style="border: none; background: none">
+        <i class="fas fa-user"></i>
+      </button>
+    </div>
   </div>
 </div>
 <!-- End log&search -->

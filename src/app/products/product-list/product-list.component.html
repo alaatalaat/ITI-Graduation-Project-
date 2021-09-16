@@ -1,4 +1,56 @@
-<ul>
+<!-- <div class="card-top container-fluid">
+  <div class="container d-flex">
+    <div class="item">
+      <a><h4>All Products</h4></a>
+    </div>
+    <div class="item">
+      <a><h4>Product One</h4></a>
+    </div>
+    <div class="item">
+      <a><h4>Product Two</h4></a>
+    </div>
+    <div class="item">
+      <a><h4>Product Three</h4></a>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of products">
+      <div class="card col-md-3">
+        <img src="{{ item.imageUrl }}" alt="image" />
+        <h3
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100ch;
+          "
+        >
+          {{ item.productName }}
+        </h3>
+        <p
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100ch;
+          "
+        >
+          {{ item.description }}
+        </p>
+        <p><strong>Price: </strong>{{ item.price | currency }}</p>
+        <button class="btn btn-primary pt-1 pb-1" (click)="addToCart(item)">
+          اضافة الي المشتريات
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<!-- ================================== -->
+<!-- <ul>
   <li *ngFor="let product of products">
     <div class="card">
       <div class="box">
@@ -18,4 +70,4 @@
       </div>
     </div>
   </li>
-</ul>
+</ul> -->

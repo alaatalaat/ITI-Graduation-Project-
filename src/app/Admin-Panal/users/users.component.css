@@ -1,0 +1,11 @@
+* {
+  direction: rtl;
+}
+table thead {
+  background: #12233f;
+  color: #fff;
+  font-family: Tajawal-extraBold !important;
+}
+table {
+  font-family: Tajawal-extraBold !important;
+}

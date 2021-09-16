@@ -8,8 +8,10 @@
       "releaseDate": "March 19, 2021",
       "description": "اروما سائل استحمام بتركيبته التي تمنح عطر يدوم طويلا n•تركيبة الترطيب تجعل البشرة ناعمة وسلسةn•خالي من الباربين و الصابون ليناسب البشرة الحساسة و يمنع الجفاف و الالتهابات",
       "size": "400 ملي",
-      "Flavor": "المانجو, الرومان",
+      "price": 25,
+      "category": "مستلزمات الاستحمام",
       "form": "جل استحمام",
+      "quantity": 50,
       "imageUrl": "./assets/Products/aroma-green-line.jpg"
     },
     {
@@ -20,19 +22,11 @@
       "releaseDate": "June 20, 2021",
       "description": "أروما جل الاستحمام السائل يمنحك شعور بالنعومةn• رائحة تدوم ل 48 ساعةn• تجربة استحمام رائعة تمنح جسدك نعومة والتدليل الذي تحتاجينه",
       "size": "400 ملي",
+      "price": 35,
+      "category": "مستلزمات الاستحمام",
       "form": "جل استحمام",
+      "quantity": 7,
       "imageUrl": "assets/Products/aroma-black-orchid.jpg"
-    },
-    {
-      "id": 3,
-      "productId": 3,
-      "productName": "أروما فريش صابون برائحة الاوركيد الوردي, 75 جم",
-      "productCode": "CCC-333",
-      "releaseDate": "April 21, 2021",
-      "description": "أروما فريش صابون برائحة الاوركيد الوردي, 75 جم",
-      "size": "75 جم",
-      "form": "الصابون",
-      "imageUrl": "assets/Products/aroma-soap.jpg"
     },
     {
       "id": 4,
@@ -42,8 +36,10 @@
       "releaseDate": "March 22, 2021",
       "description": "• يحتوي على مكونات طبيعيةn• يتميز بقوام ناعم ورائحة عطرة",
       "size": "250 مل",
+      "price": 25,
+      "category": "مستلزمات الاستحمام",
       "form": "جل",
-      "Flavor": "روز برى",
+      "quantity": 5,
       "imageUrl": "assets/Products/areej-shower-jel.jpg"
     },
     {
@@ -54,19 +50,11 @@
       "releaseDate": "June 23, 2021",
       "description": "سائل استحمام ينشط الجسم والعقل بنفحات الكمثرى المثلج وخشب الأرز. دقة وغموض.",
       "size": "250 مل",
+      "price": 35,
+      "category": "مستلزمات الاستحمام",
       "form": "غسول جسم",
+      "quantity": 10,
       "imageUrl": "assets/Products/axe-black.jpg"
-    },
-    {
-      "id": 6,
-      "productId": 6,
-      "productName": "إيفا كريم سائل للاستحمام بالجلسرين، 300 مل",
-      "productCode": "BBB-222",
-      "releaseDate": "April 24, 2021",
-      "description": "إيفا بالجلسرين كريم سائل الاستحمام يعمل على تنظيف بشرتك بلطف ويتركها حريرية الملمس بفضل رغوته الغنيةnn• يغلف البشرتك برائحة عطرة زكية n• يترك بشرتك نظيفة، مرطبة، وناعمة كالحرير ومعطرة برائحة منعشة",
-      "size": "300 مل",
-      "form": "كريم استحمام",
-      "imageUrl": "assets/Products/eva-kreem.jpg"
     },
     {
       "id": 7,
@@ -75,8 +63,11 @@
       "productCode": "CCC-222",
       "releaseDate": "March 25, 2021",
       "description": "ايجلز بيكس ناتشورال لوفه حجم كبير مصنوعة من اللوف المصري الطبيعي 100 ٪ n• قشر بلطف وبشكل فعال الخلايا الميتة والأوساخ والشوائب وينظف المسام ويحفز الدورة الدموية مما يتركها مطهرة جيدا ومنتعشة من الرأس إلى القدمين.n• لطيف على البشرة الحساسةn• هذا المنتج آمن لك وللبيئة.n• مزودة بحبل لسهولة التعليق والتجفيف.",
-      "pieces": "قطعتين",
+      "size": "قطعتين",
+      "price": 15,
+      "category": "مستلزمات الاستحمام",
       "form": "لوفه",
+      "quantity": 15,
       "imageUrl": "assets/Products/eaglz-bex.jpg"
     },
     {
@@ -86,8 +77,11 @@
       "productCode": "DDD-222",
       "releaseDate": "June 26, 2021",
       "description": "مناديل العناية السهلة نظيفة ، منعشة وترطيب ، لأنها تحتوي على منظف آمن ومنعش بالعطور غير الكحولية.n• يمكن استخدامه من قبل جميع أفراد الأسرة في أي وقت وفي أي مكان.",
-      "pieces": "40 قطعة",
+      "size": "40 قطعة",
+      "price": 25,
+      "category": "مستلزمات الاستحمام",
       "form": "مناديل مبللة",
+      "quantity": 20,
       "imageUrl": "assets/Products/easy-care.jpg"
     },
     {
@@ -98,7 +92,10 @@
       "releaseDate": "March 27, 2021",
       "description": "استمتع بسبا حراري في المنزل باستخدام بالموفيف شاور جل n• يحتوي على الطين الأبيض الذي يهتم لبشرتكn• المعادن الحرارية تساعد على الاسترخاء جسمكn• التدليك الناعم يعمل على تنظيف البشرة n• يستخدم كل يوم لبشرة ناعمة",
       "size": "250 مل",
+      "category": "مستلزمات الاستحمام",
+      "price": 35,
       "form": "جل استحمام",
+      "quantity": 12,
       "imageUrl": "assets/Products/palmolive-thermal-spa.jpg"
     },
     {
@@ -108,8 +105,11 @@
       "productCode": "BBB-333",
       "releaseDate": "April 28, 2021",
       "description": "بابيلون مناديل مبللة منعشة، 72 منديل",
-      "pieces": "250 مل",
+      "size": "250 مل",
+      "price": 15,
+      "category": "مستلزمات الاستحمام",
       "form": "مناديل مبللة",
+      "quantity": 23,
       "imageUrl": "assets/Products/papilion-wipes.jpg"
     },
     {
@@ -120,7 +120,10 @@
       "releaseDate": "April 24, 2021",
       "description": "إيفا بالجلسرين كريم سائل الاستحمام يعمل على تنظيف بشرتك بلطف ويتركها حريرية الملمس بفضل رغوته الغنيةnn• يغلف البشرتك برائحة عطرة زكية n• يترك بشرتك نظيفة، مرطبة، وناعمة كالحرير ومعطرة برائحة منعشة",
       "size": "300 مل",
+      "price": 35,
+      "category": "مستلزمات الاستحمام",
       "form": "كريم استحمام",
+      "quantity": 27,
       "imageUrl": "assets/Products/eva-kreem.jpg"
     },
     {
@@ -130,13 +133,39 @@
       "productCode": "CCC-222",
       "releaseDate": "March 25, 2021",
       "description": "ايجلز بيكس ناتشورال لوفه حجم كبير مصنوعة من اللوف المصري الطبيعي 100 ٪ n• قشر بلطف وبشكل فعال الخلايا الميتة والأوساخ والشوائب وينظف المسام ويحفز الدورة الدموية مما يتركها مطهرة جيدا ومنتعشة من الرأس إلى القدمين.n• لطيف على البشرة الحساسةn• هذا المنتج آمن لك وللبيئة.n• مزودة بحبل لسهولة التعليق والتجفيف.",
-      "pieces": "قطعتين",
+      "size": "قطعتين",
+      "price": 25,
+      "category": "مستلزمات الاستحمام",
       "form": "لوفه",
+      "quantity": 2,
       "imageUrl": "assets/Products/eaglz-bex.jpg"
+    },
+    {
+      "id": 13,
+      "productName": "بنتب",
+      "productCode": "12-شش",
+      "releaseDate": "12-12-3",
+      "description": "نتلاءر",
+      "size": "50",
+      "form": "نتلاي",
+      "quantity": 0,
+      "imageUrl": null
     }
   ],
-  "comments": [],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "fullname": "Abdelrahman Salem",
+      "mobile": 7834907234,
+      "email": "abdosalem@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "fullname": "",
+      "mobile": 7834907234,
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 1
+    }
+  ]
 }
